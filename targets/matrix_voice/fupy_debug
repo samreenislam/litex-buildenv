@@ -1,0 +1,9 @@
+Hello, how long should the wait be once running something like
+flterm --port=/dev/ttyUSB1 --kernel=build/arty_base_lm32//software/micropython/firmware.bin --speed=115200
+I've had this on my terminal for about a minute and a half: [FLTERM] v2.4-29-g47d3b15 Starting...
+Samreen
+18:48:23
+Exited out, probably messed something up. I'm trying to support the MATRIX Voice board. It doesn't have a direct USB out so I am using an FTDI to flash the firmware using flterm. I flashed the bit file to the Spartan 6 FPGA on it via the Raspberry Pi using xc3sprog.
+Samreen
+18:49:37
+I was trying to flash the firmware through the Pi as well but haven't found a simple alternative to flterm with the firmware.bin file. Any direction/advice would be appreciated!
