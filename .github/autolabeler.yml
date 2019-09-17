@@ -15,6 +15,7 @@ board-saturn: ["targets/saturn", "platforms/saturn.py"]
 board-sim: ["targets/sim", "platforms/sim.py"]
 board-tinyfpga_bx: ["targets/tinyfpga_bx", "platforms/tinyfpga_bx.py"]
 board-waxwing: ["targets/waxwing", "platforms/waxwing.py"]
+board-matrix_voice: ["targets/matrix_voice", "platforms/matrix_voice.py"]
 boards-all: ["targets/common/"]
 boards-artix7: [
         "targets/arty", "platforms/arty.py",
@@ -36,7 +37,8 @@ boards-spartan6: [
         "targets/opsis", "platforms/opsis.py",
         "targets/pipstrello", "platforms/pipstrello.py",
         "targets/saturn", "platforms/saturn.py",
-        "targets/waxwing", "platforms/waxwing.py"
+        "targets/waxwing", "platforms/waxwing.py",
+        "targets/matrix_voice", "platforms/matrix_voice.py"
         ]
 firmware-fpga: ["gateware/"]
 firmware-softcpu: ["firmware/"]
