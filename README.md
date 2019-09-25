@@ -1,3 +1,63 @@
+# Some directions for this MATRIX Voice fork
+
+Main changes include:
+- Adding matrix_voice definitions to platforms folder
+- Adding matrix_voice SoC configurations to targets folder
+- Adding our DDR2 RAM definition in `modules.py` in the repo's main folder which is supposed to replace `third_party/litedram/litedram/modules.py`
+
+
+Primarily followed the instructions ![here](https://ewen.mcneill.gen.nz/blog/entry/2018-01-17-fupy-fpga-micropython-on-mimas-v2-and-arty-a7/) for the Mimas V2
+
+
+First cloned the following repos
+
+```
+cd /src
+git clone https://github.com/samreenislam/litex-buildenv.git
+git clone https://github.com/litex-hub/litex-buildenv-udev
+```
+
+From second repo, copy 99 hdmitousb permissions to `/udev/somthing/rules.d` and `/lib/something/rules.download`
+Log out of terminal session & log back in.
+
+Run the following
+
+```
+cd litex-buildenv
+CPU=vexriscv
+PLATFORM=matrix_voice
+TARGET=base
+FIRMWARE=micropython
+export CPU PLATFORM TARGET FIRMWARE
+```
+
+
+Then run the following scripts for the appropriate downloads
+
+```
+scripts/download-env.sh
+source scripts/enter-env.sh
+```
+
+At this point, you should have the prompt `(LX P=matrix_voice F=micropython)`.
+- Copy `modules.py` in the main folder of the repo and replace the `modules.py` file in `third_party/litedram/litedram` with it. This is to include the MATRIX Voice's DDR2 RAM module definition.
+
+
+Then build the FPGA bit file & micropython firmware as stated in the article linked above with
+
+```
+make gateware
+scripts/build-micropython.sh
+```
+
+Flash the top.bit file to the MATRIX Voice's Spartan-6 using the directions ![here](https://matrix-io.github.io/matrix-documentation/matrix-voice/resources/fpga/).
+
+
+TO-DO: Flash BIOS onto FPGA SoC after flashing top.bit.
+
+
+---
+
 # LiteX Build Environment
 
 [The LiteX Build Environment](https://github.com/timvideos/litex-buildenv)
