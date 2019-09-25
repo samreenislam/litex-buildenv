@@ -6,7 +6,7 @@ Main changes include:
 - Adding our DDR2 RAM definition in `modules.py` in the repo's main folder which is supposed to replace `third_party/litedram/litedram/modules.py`
 
 
-Primarily followed the instructions ![here](https://ewen.mcneill.gen.nz/blog/entry/2018-01-17-fupy-fpga-micropython-on-mimas-v2-and-arty-a7/) for the Mimas V2
+Primarily followed the instructions ![here](https://ewen.mcneill.gen.nz/blog/entry/2018-01-17-fupy-fpga-micropython-on-mimas-v2-and-arty-a7/) for the Mimas V2.
 
 
 First cloned the following repos
@@ -17,8 +17,7 @@ git clone https://github.com/samreenislam/litex-buildenv.git
 git clone https://github.com/litex-hub/litex-buildenv-udev
 ```
 
-From second repo, copy 99 hdmitousb permissions to `/udev/somthing/rules.d` and `/lib/something/rules.download`
-Log out of terminal session & log back in.
+From second repo, copy 99 hdmitousb permissions to `/udev/somthing/rules.d` and `/lib/something/rules.download`. Log out of terminal session & log back in.
 
 Run the following
 
