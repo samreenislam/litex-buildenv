@@ -19,6 +19,9 @@ git clone https://github.com/litex-hub/litex-buildenv-udev
 
 From second repo, copy 99 hdmitousb permissions to `/udev/somthing/rules.d` and `/lib/something/rules.download`. Log out of terminal session & log back in.
 
+- Copy `modules.py` in the main folder of the repo and replace the `modules.py` file in `third_party/litedram/litedram` with it. This is to include the MATRIX Voice's DDR2 RAM module definition.
+- Copy `matrix_voice.py` in the `platforms` folder of the repo into `third_party/mogen/migen/build/platforms`.
+
 Run the following
 
 ```
@@ -39,7 +42,6 @@ source scripts/enter-env.sh
 ```
 
 At this point, you should have a prompt similar to `(LX P=matrix_voice C=vexriscv F=micropython)`.
-- Copy `modules.py` in the main folder of the repo and replace the `modules.py` file in `third_party/litedram/litedram` with it. This is to include the MATRIX Voice's DDR2 RAM module definition.
 
 
 Then build the FPGA bit file & micropython firmware as stated in the article linked above with
