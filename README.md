@@ -38,7 +38,7 @@ scripts/download-env.sh
 source scripts/enter-env.sh
 ```
 
-At this point, you should have the prompt `(LX P=matrix_voice F=micropython)`.
+At this point, you should have a prompt similar to `(LX P=matrix_voice C=vexriscv F=micropython)`.
 - Copy `modules.py` in the main folder of the repo and replace the `modules.py` file in `third_party/litedram/litedram` with it. This is to include the MATRIX Voice's DDR2 RAM module definition.
 
 
