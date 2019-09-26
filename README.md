@@ -6,7 +6,7 @@ Main changes include:
 - Adding our DDR2 RAM definition in `modules.py` in the repo's main folder which is supposed to replace `third_party/litedram/litedram/modules.py`
 
 
-Primarily followed the instructions ![here](https://ewen.mcneill.gen.nz/blog/entry/2018-01-17-fupy-fpga-micropython-on-mimas-v2-and-arty-a7/) for the Mimas V2.
+Primarily followed the instructions [here](https://ewen.mcneill.gen.nz/blog/entry/2018-01-17-fupy-fpga-micropython-on-mimas-v2-and-arty-a7/) for the Mimas V2.
 
 
 First cloned the following repos
@@ -49,7 +49,7 @@ make gateware
 scripts/build-micropython.sh
 ```
 
-Flash the top.bit file to the MATRIX Voice's Spartan-6 using the directions ![here](https://matrix-io.github.io/matrix-documentation/matrix-voice/resources/fpga/).
+Flash the top.bit file to the MATRIX Voice's Spartan-6 using the directions [here](https://matrix-io.github.io/matrix-documentation/matrix-voice/resources/fpga/).
 
 
 TO-DO: Flash BIOS onto FPGA SoC after flashing top.bit.
