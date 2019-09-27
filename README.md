@@ -17,7 +17,7 @@ git clone https://github.com/samreenislam/litex-buildenv.git
 git clone https://github.com/litex-hub/litex-buildenv-udev
 ```
 
-From second repo, copy 99 hdmitousb permissions to `/udev/somthing/rules.d` and `/lib/something/rules.download`. Log out of terminal session & log back in.
+From second repo, copy `99-hdmi2usb-permissions.rules` permission to `/etc/udev/rules.d` and `/lib/udev/rules.d`. Log out of terminal session & log back in.
 
 Enter `litex-buildenv` repo and run the following
 
