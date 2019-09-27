@@ -8,6 +8,7 @@ Main changes include:
 
 Primarily followed the instructions [here](https://ewen.mcneill.gen.nz/blog/entry/2018-01-17-fupy-fpga-micropython-on-mimas-v2-and-arty-a7/) for the Mimas V2.
 
+Make sure to have the Xilinx ISE installed to compile for the MATRIX Voice's Spartan-6. Follow the steps [here](https://www.hackster.io/matrix-labs/get-started-with-fpga-programming-on-matrix-devices-525cd5) to do so.
 
 First cloned the following repos in folder of choice
 
